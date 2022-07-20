@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
   #  - run: npm test
     - name: deploy to gh-pages
-      uses: arjunmetre/shivashenkar.github.io@v3
+      uses: arjunmetre/shivashenkar.github.io@latest
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build  
